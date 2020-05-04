@@ -17,5 +17,15 @@ public class Jogador {
     private int vidas;
     
     public void cadastrar(){}
-
+    
+    public void setNome(String nome){
+        if(nome.length() > 1 && nome.length() < 15 ){
+            this.nome = nome;
+        }
+        else throw new IllegalArgumentException("Nome inválido");
+    }
+    
+    public String getNome(){
+        return this.nome;
+    }
 }
