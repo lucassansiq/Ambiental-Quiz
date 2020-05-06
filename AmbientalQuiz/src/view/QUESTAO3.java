@@ -40,7 +40,6 @@ public class QUESTAO3 extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(778, 477));
         setSize(new java.awt.Dimension(778, 477));
 
         jLabel2.setText("RESPOSTA 1");
