@@ -30,10 +30,10 @@ public class tela extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        btIniciar = new javax.swing.JButton();
+        btCreditos = new javax.swing.JButton();
+        btRanking = new javax.swing.JButton();
+        lbLogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -44,28 +44,33 @@ public class tela extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/INICIAR.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btIniciar.setBackground(new java.awt.Color(0, 255, 153));
+        btIniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/INICIAR.png"))); // NOI18N
+        btIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btIniciarActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 255, 153));
-        jButton3.setForeground(new java.awt.Color(0, 204, 153));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CREDITOS.png"))); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btCreditos.setBackground(new java.awt.Color(0, 255, 153));
+        btCreditos.setForeground(new java.awt.Color(0, 204, 153));
+        btCreditos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/CREDITOS.png"))); // NOI18N
+        btCreditos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btCreditosActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 153));
-        jButton2.setForeground(new java.awt.Color(0, 204, 153));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/RANKING.png"))); // NOI18N
+        btRanking.setBackground(new java.awt.Color(0, 255, 153));
+        btRanking.setForeground(new java.awt.Color(0, 204, 153));
+        btRanking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/RANKING.png"))); // NOI18N
+        btRanking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRankingActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
+        lbLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -73,17 +78,17 @@ public class tela extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(74, 74, 74)
-                .addComponent(jButton1)
+                .addComponent(btIniciar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(254, 254, 254)
-                .addComponent(jButton2)
+                .addComponent(btRanking)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
+                .addComponent(btCreditos)
                 .addGap(160, 160, 160))
         );
         jPanel1Layout.setVerticalGroup(
@@ -92,14 +97,14 @@ public class tela extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel1))
+                        .addComponent(lbLogo))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(190, 190, 190)
-                        .addComponent(jButton1)))
+                        .addComponent(btIniciar)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
+                .addComponent(btRanking)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
+                .addComponent(btCreditos)
                 .addContainerGap(48, Short.MAX_VALUE))
         );
 
@@ -117,13 +122,17 @@ public class tela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void btCreditosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCreditosActionPerformed
+        new Ranking().setVisible(true);
+    }//GEN-LAST:event_btCreditosActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIniciarActionPerformed
+        new QUESTAO1().setVisible(true);        
+    }//GEN-LAST:event_btIniciarActionPerformed
+
+    private void btRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRankingActionPerformed
+        new Creditos().setVisible(true);
+    }//GEN-LAST:event_btRankingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,10 +170,10 @@ public class tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btCreditos;
+    private javax.swing.JButton btIniciar;
+    private javax.swing.JButton btRanking;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lbLogo;
     // End of variables declaration//GEN-END:variables
 }
