@@ -127,7 +127,7 @@ public class tela extends javax.swing.JFrame {
     }//GEN-LAST:event_btCreditosActionPerformed
 
     private void btIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIniciarActionPerformed
-        new QUESTAO1().setVisible(true);        
+        new Cadastro().setVisible(true);        
     }//GEN-LAST:event_btIniciarActionPerformed
 
     private void btRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRankingActionPerformed
