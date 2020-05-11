@@ -6,6 +6,8 @@
 
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Lucas Hype
@@ -13,8 +15,9 @@ package model;
 public class Jogador {
     
     private String nome;
-    private int pontuacao;
-    private int vidas;
+    private static int pontuacao;
+    private static int vidas;
+    private static ArrayList<Jogador> lista = new ArrayList<Jogador>(10); 
     
     public void cadastrar(){}
     
@@ -28,4 +31,40 @@ public class Jogador {
     public String getNome(){
         return this.nome;
     }
+    public void setPontuacao(int pontuacao){
+        this.pontuacao = pontuacao;
+    }
+    
+    public void setVidas(int vidas){
+        this.vidas = vidas;
+    }
+    public int respostaCerta(){
+        return pontuacao +=10;
+    }  
+    public int respostaErrada(){
+        return vidas -=1;
+    }
+    
+    public Jogador (String nome){
+        this(nome,0,3);
+    }
+  
+    public Jogador (String nome , int pontuacao, int vidas){
+        setNome(nome);
+        setPontuacao(pontuacao);
+        setVidas(vidas);
+        lista.add(this);
+        
+    }
+    
+    public static void lista(){
+        for (Jogador a: lista){
+            System.out.println(a);
+        }
+    } 
+    
+    public String toString(){
+        return("Nome: " + getNome() + " - Pontuação: " + pontuacao);
+    }
+    
 }
