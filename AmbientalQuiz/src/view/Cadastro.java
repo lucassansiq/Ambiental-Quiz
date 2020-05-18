@@ -5,6 +5,7 @@
  */
 package view;
 
+import java.util.ArrayList;
 import model.Jogador;
 
 /**
@@ -12,7 +13,11 @@ import model.Jogador;
  * @author Lucas
  */
 public class Cadastro extends javax.swing.JFrame {
-
+    
+    private String nome;
+    protected static int pontuacao;
+    protected static int vidas = 3;
+    protected static ArrayList<Jogador> ranking = new ArrayList<Jogador>(); 
     /**
      * Creates new form Cadastro
      */
@@ -20,8 +25,12 @@ public class Cadastro extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("CADASTRO");
+        
+        
+        
     }
-
+ 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -86,8 +95,13 @@ public class Cadastro extends javax.swing.JFrame {
 
     private void btIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIniciarActionPerformed
         String nome = tfNome.getText();
+   
+        Jogador jogador = new Jogador(nome,0,3);
+        jogador.setPontuacao(pontuacao);
+        jogador.setVidas(vidas);
+        ranking.add(jogador);
         
-        Jogador jogador = new Jogador(nome);
+        
         
         new QUESTAO1().setVisible(true);
     }//GEN-LAST:event_btIniciarActionPerformed
