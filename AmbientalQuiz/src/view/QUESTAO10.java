@@ -5,6 +5,9 @@
  */
 package view;
 
+import static view.Cadastro.pontuacao;
+import static view.Cadastro.vidas;
+
 /**
  *
  * @author Lucas
@@ -30,43 +33,63 @@ public class QUESTAO10 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        bt1 = new javax.swing.JButton();
+        bt2 = new javax.swing.JButton();
+        bt3 = new javax.swing.JButton();
+        bt4 = new javax.swing.JButton();
+        btVoltar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        lbQuestao = new javax.swing.JLabel();
+        lb1 = new javax.swing.JLabel();
+        lb2 = new javax.swing.JLabel();
+        lb3 = new javax.swing.JLabel();
+        lb4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 153));
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
+        bt1.setBackground(new java.awt.Color(0, 255, 153));
+        bt1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
+        bt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt1ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 153));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2.png"))); // NOI18N
+        bt2.setBackground(new java.awt.Color(0, 255, 153));
+        bt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2.png"))); // NOI18N
+        bt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt2ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setBackground(new java.awt.Color(0, 255, 153));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3.png"))); // NOI18N
+        bt3.setBackground(new java.awt.Color(0, 255, 153));
+        bt3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3.png"))); // NOI18N
+        bt3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt3ActionPerformed(evt);
+            }
+        });
 
-        jButton4.setBackground(new java.awt.Color(0, 255, 153));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/4.png"))); // NOI18N
-        jButton4.setToolTipText("");
+        bt4.setBackground(new java.awt.Color(0, 255, 153));
+        bt4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/4.png"))); // NOI18N
+        bt4.setToolTipText("");
+        bt4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt4ActionPerformed(evt);
+            }
+        });
 
-        jButton5.setBackground(new java.awt.Color(0, 255, 153));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/voltar.png"))); // NOI18N
+        btVoltar.setBackground(new java.awt.Color(0, 255, 153));
+        btVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/voltar.png"))); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("Qual alternativa apresenta uma vantagem da energia solar?  ");
+        lbQuestao.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lbQuestao.setText("10.Qual alternativa apresenta uma vantagem da energia solar?  ");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -74,28 +97,28 @@ public class QUESTAO10 extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addComponent(lbQuestao)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(90, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(lbQuestao)
                 .addContainerGap())
         );
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel2.setText("Não polui");
+        lb1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lb1.setText("Não polui");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel3.setText("Não é renovável");
+        lb2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lb2.setText("Não é renovável");
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel4.setText("É eficaz em qualquer clima.");
+        lb3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lb3.setText("É eficaz em qualquer clima.");
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel5.setText("É disponível a todo momento");
+        lb4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        lb4.setText("É disponível a todo momento");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -107,26 +130,26 @@ public class QUESTAO10 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton5))
+                        .addComponent(btVoltar))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(bt1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel2))
+                                .addComponent(lb1))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(bt2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel3))
+                                .addComponent(lb2))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton3)
+                                .addComponent(bt3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel4))
+                                .addComponent(lb3))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton4)
+                                .addComponent(bt4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel5)))
+                                .addComponent(lb4)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -135,24 +158,24 @@ public class QUESTAO10 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5)
+                    .addComponent(btVoltar)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel2))
+                    .addComponent(bt1)
+                    .addComponent(lb1))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton2)
-                    .addComponent(jLabel3))
+                    .addComponent(bt2)
+                    .addComponent(lb2))
                 .addGap(38, 38, 38)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3)
-                    .addComponent(jLabel4))
+                    .addComponent(bt3)
+                    .addComponent(lb3))
                 .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4)
-                    .addComponent(jLabel5))
+                    .addComponent(bt4)
+                    .addComponent(lb4))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
@@ -169,6 +192,36 @@ public class QUESTAO10 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
+        new Fim().setVisible(true);
+        pontuacao +=10;
+// TODO add your handling code here:
+    }//GEN-LAST:event_bt1ActionPerformed
+
+    private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
+        vidas -=1;
+        if (vidas > 0){
+        new Fim().setVisible(true);}
+        else new Fim().setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_bt2ActionPerformed
+
+    private void bt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt3ActionPerformed
+        vidas -=1;
+        if (vidas > 0){
+        new Fim().setVisible(true);}
+        else new Fim().setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_bt3ActionPerformed
+
+    private void bt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt4ActionPerformed
+        vidas -=1;
+        if (vidas > 0){
+        new Fim().setVisible(true);}
+        else new Fim().setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_bt4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,17 +259,17 @@ public class QUESTAO10 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton bt1;
+    private javax.swing.JButton bt2;
+    private javax.swing.JButton bt3;
+    private javax.swing.JButton bt4;
+    private javax.swing.JButton btVoltar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lb1;
+    private javax.swing.JLabel lb2;
+    private javax.swing.JLabel lb3;
+    private javax.swing.JLabel lb4;
+    private javax.swing.JLabel lbQuestao;
     // End of variables declaration//GEN-END:variables
 }
