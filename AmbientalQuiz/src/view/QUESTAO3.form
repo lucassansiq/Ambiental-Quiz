@@ -152,9 +152,15 @@
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="bt2">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="ff" red="0" type="rgb"/>
+            </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="0" type="rgb"/>
             </Property>
@@ -162,6 +168,9 @@
               <Image iconType="3" name="/images/2.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="bt3">
           <Properties>
@@ -172,6 +181,9 @@
               <Image iconType="3" name="/images/3.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="bt4">
           <Properties>
@@ -182,6 +194,9 @@
               <Image iconType="3" name="/images/4.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt4ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btVoltar">
           <Properties>
@@ -234,7 +249,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="O que &#xe9; coleta seletiva?"/>
+                <Property name="text" type="java.lang.String" value="3.O que &#xe9; coleta seletiva?"/>
               </Properties>
             </Component>
           </SubComponents>
