@@ -5,6 +5,9 @@
  */
 package view;
 
+import static view.Cadastro.pontuacao;
+import static view.Cadastro.vidas;
+
 /**
  *
  * @author Ana Nery
@@ -50,6 +53,11 @@ public class QUESTAO2 extends javax.swing.JFrame {
 
         bt4.setBackground(new java.awt.Color(0, 255, 153));
         bt4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/4.png"))); // NOI18N
+        bt4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt4ActionPerformed(evt);
+            }
+        });
 
         lb1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         lb1.setText("  Juntar tudo na lixeira, pois os prédios já fazem o trabalho de separação.");
@@ -65,12 +73,27 @@ public class QUESTAO2 extends javax.swing.JFrame {
 
         bt1.setBackground(new java.awt.Color(0, 255, 153));
         bt1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
+        bt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt1ActionPerformed(evt);
+            }
+        });
 
         bt2.setBackground(new java.awt.Color(0, 255, 153));
         bt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2.png"))); // NOI18N
+        bt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt2ActionPerformed(evt);
+            }
+        });
 
         bt3.setBackground(new java.awt.Color(0, 255, 153));
         bt3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3.png"))); // NOI18N
+        bt3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt3ActionPerformed(evt);
+            }
+        });
 
         btVoltar.setBackground(new java.awt.Color(0, 255, 153));
         btVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/voltar.png"))); // NOI18N
@@ -124,7 +147,7 @@ public class QUESTAO2 extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(bt4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lb4, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lb4)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,6 +220,36 @@ public class QUESTAO2 extends javax.swing.JFrame {
     private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
         new tela().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_btVoltarActionPerformed
+
+    private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
+        new QUESTAO3().setVisible(true);
+        pontuacao +=10;       
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt2ActionPerformed
+
+    private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
+        vidas -=1;
+        if (vidas > 0){
+        new QUESTAO3().setVisible(true);}
+        else new Fim().setVisible(true);
+           // TODO add your handling code here:
+    }//GEN-LAST:event_bt1ActionPerformed
+
+    private void bt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt3ActionPerformed
+        vidas -=1;
+        if (vidas > 0){
+        new QUESTAO3().setVisible(true);}
+        else new Fim().setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt3ActionPerformed
+
+    private void bt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt4ActionPerformed
+        vidas -=1;
+        if (vidas > 0){
+        new QUESTAO3().setVisible(true);}
+        else new Fim().setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt4ActionPerformed
 
     /**
      * @param args the command line arguments
