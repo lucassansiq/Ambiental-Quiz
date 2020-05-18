@@ -31,8 +31,17 @@ public class Creditos extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        lbDesenvolvimento = new javax.swing.JLabel();
+        lbLucasD = new javax.swing.JLabel();
+        lbMatheusD = new javax.swing.JLabel();
+        lbFelipeD = new javax.swing.JLabel();
+        lbGabrielD = new javax.swing.JLabel();
+        lbTextos = new javax.swing.JLabel();
+        lbArthurT = new javax.swing.JLabel();
+        lbArte = new javax.swing.JLabel();
+        lbLucasA = new javax.swing.JLabel();
+        lbTitulo = new javax.swing.JLabel();
+        btVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,25 +50,83 @@ public class Creditos extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        lbDesenvolvimento.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lbDesenvolvimento.setText("Desenvolvimento:");
+
+        lbLucasD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lbLucasD.setText("Lucas ");
+
+        lbMatheusD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lbMatheusD.setText("Matheus ");
+
+        lbFelipeD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lbFelipeD.setText("Felipe");
+
+        lbGabrielD.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lbGabrielD.setText("Gabriel");
+
+        lbTextos.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lbTextos.setText("Textos:");
+
+        lbArthurT.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lbArthurT.setText("Arthur");
+
+        lbArte.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lbArte.setText("Arte:");
+
+        lbLucasA.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        lbLucasA.setText("Lucas");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 347, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(153, 153, 153)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbDesenvolvimento)
+                    .addComponent(lbLucasD)
+                    .addComponent(lbMatheusD)
+                    .addComponent(lbFelipeD)
+                    .addComponent(lbGabrielD)
+                    .addComponent(lbTextos)
+                    .addComponent(lbArthurT)
+                    .addComponent(lbArte)
+                    .addComponent(lbLucasA))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 362, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(lbDesenvolvimento)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbLucasD)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbMatheusD)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbFelipeD)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lbGabrielD)
+                .addGap(35, 35, 35)
+                .addComponent(lbTextos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lbArthurT)
+                .addGap(44, 44, 44)
+                .addComponent(lbArte)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbLucasA)
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel1.setText("CRÉDITOS");
+        lbTitulo.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        lbTitulo.setText("CRÉDITOS");
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/voltar.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btVoltar.setBackground(new java.awt.Color(0, 255, 153));
+        btVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/voltar.png"))); // NOI18N
+        btVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btVoltarActionPerformed(evt);
             }
         });
 
@@ -68,24 +135,30 @@ public class Creditos extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(196, 196, 196)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(284, 284, 284)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 215, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(39, 39, 39))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lbTitulo)
+                        .addGap(177, 177, 177)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
+                .addComponent(btVoltar)
+                .addGap(28, 28, 28))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(29, Short.MAX_VALUE)
+                        .addComponent(lbTitulo)
+                        .addGap(11, 11, 11))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btVoltar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45))
         );
@@ -104,9 +177,9 @@ public class Creditos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
         new tela().setVisible(true);       
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,9 +217,18 @@ public class Creditos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btVoltar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lbArte;
+    private javax.swing.JLabel lbArthurT;
+    private javax.swing.JLabel lbDesenvolvimento;
+    private javax.swing.JLabel lbFelipeD;
+    private javax.swing.JLabel lbGabrielD;
+    private javax.swing.JLabel lbLucasA;
+    private javax.swing.JLabel lbLucasD;
+    private javax.swing.JLabel lbMatheusD;
+    private javax.swing.JLabel lbTextos;
+    private javax.swing.JLabel lbTitulo;
     // End of variables declaration//GEN-END:variables
 }
