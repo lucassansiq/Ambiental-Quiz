@@ -6,6 +6,8 @@
 package view;
 
 import model.Jogador;
+import static view.Cadastro.pontuacao;
+import static view.Cadastro.vidas;
 
 /**
  *
@@ -207,26 +209,36 @@ public class QUESTAO1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
-        new tela().setVisible(true);    
+         new tela().setVisible(true);   
     }//GEN-LAST:event_btVoltarActionPerformed
 
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
-        new QUESTAO2().setVisible(true);
+        vidas -=1;
+        if (vidas > 0){
+        new QUESTAO2().setVisible(true);}
+        else new Fim().setVisible(true);
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_bt1ActionPerformed
 
     private void bt4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt4ActionPerformed
         new QUESTAO2().setVisible(true);
-        
+        pontuacao +=10;             
     }//GEN-LAST:event_bt4ActionPerformed
 
     private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
-        new QUESTAO2().setVisible(true);
+        vidas -=1;
+        if (vidas > 0){
+        new QUESTAO2().setVisible(true);}
+        else new Fim().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_bt2ActionPerformed
 
     private void bt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt3ActionPerformed
-        new QUESTAO2().setVisible(true);
+        vidas -=1;
+        if (vidas > 0){
+        new QUESTAO2().setVisible(true);}
+        else new Fim().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_bt3ActionPerformed
 
