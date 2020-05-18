@@ -123,7 +123,7 @@ public class tela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btCreditosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCreditosActionPerformed
-        new Ranking().setVisible(true);
+        new Creditos().setVisible(true);
     }//GEN-LAST:event_btCreditosActionPerformed
 
     private void btIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIniciarActionPerformed
@@ -131,7 +131,7 @@ public class tela extends javax.swing.JFrame {
     }//GEN-LAST:event_btIniciarActionPerformed
 
     private void btRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRankingActionPerformed
-        new Creditos().setVisible(true);
+        new Ranking().setVisible(true);
     }//GEN-LAST:event_btRankingActionPerformed
 
     /**
